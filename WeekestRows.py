@@ -1,7 +1,7 @@
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
         sums = list()
-        week = list()
+        weak = list()
         i = 0
         for st in mat:
             sums.append([sum(st),i])
@@ -11,5 +11,5 @@ class Solution:
         sums.sort()
         sums = sums[:k]
         for wk in sums:
-            week.append(wk[1])
-        return(week)
+            weak.append(wk[1])
+        return(weak)
