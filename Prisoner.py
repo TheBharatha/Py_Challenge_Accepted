@@ -1,17 +1,11 @@
 def saveThePrisoner(n, m, s):
-    if m > n:
-        print(m%n, abs(1-s))
-        prisoner = (m%n) + abs(1-s)
-    elif m < n:
-        print('2')
-        prisoner = (n%m) + s
-    elif m == n:
-        print('3')
-        if s == 1:
-            prisoner = m
+    if s + m < n:
+        return(s + m - 1)
+    else:
+        if (s+m - 1) % n == 0:
+            return(n)
         else:
-            prisoner = s - 1
-    return(prisoner)
+            return((s+m - 1) % n)
 
 if __name__ == '__main__':
     t = int(input())
