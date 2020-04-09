@@ -1,3 +1,4 @@
+from decimal import Decimal
 def jumpingOnClouds(c, k):
     stop = False
     energy = 100
