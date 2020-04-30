@@ -20,10 +20,10 @@ def topNbuzzWords(toys, quotes, topToys):
 
 if __name__ == "__main__":
     toys = ["elsa", "elmo", "legos", "drone", "tablet", "warcraft"]
-    quotes = ["Elmo is the hottest of the season! Elmo will be on every kid's wishlist!",
-        "The new Elmo dolls are super high quality",
-        "Expect the Elsa dolls to be very popular this year, Elsa!",
-        "Elsa and Elmo are the toys I'll be buying for my kids, Elsa is good",
+    quotes = ["Elmoa is the hottest of the season! Elmoa will be on every kid's wishlist!",
+        "The new Elmoa dolls are super high quality",
+        "Expect the Elsaa dolls to be very popular this year, Elsaa!",
+        "Elsaa and Elmoa are the toys I'll be buying for my kids, Elsaa is good",
         "For parents of older kids, look into buying them a drone",
         "Warcraft is slowly rising in popularity ahead of the holiday season"]
     topToys = 2
