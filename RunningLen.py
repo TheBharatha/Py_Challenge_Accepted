@@ -1,7 +1,7 @@
 # Function that gets a string as an parameter
 def stringComprress(givenStr):
     # Initializing an empty string, it hold the compressed string output from the loop
-    afterCompression = ''
+    encoded = ''
     # Assuming there is at least one character in the given string
     charCount = 1
     # Looping through all the characters in the given string
@@ -14,18 +14,18 @@ def stringComprress(givenStr):
         # Else condition. If the given character is not same as the previous character
         else:
             # Variable afterCompression is concatenated with the variable charCount and the previous character
-            afterCompression = afterCompression + str(charCount) + givenStr[char-1]
-            # Reetting the variable charCount as we have reached the end of similar characters
+            encoded = encoded + str(charCount) + givenStr[char-1]
+            # Resetting the variable charCount as we have reached the end of similar characters
             charCount = 1
-    # Within the above for loop, the last set of similar characters are skipped because the else condition will not be satisfied
+    # Within the above for loop, the last set of similar characters are skipped because the else condition is not satisfied
     # Try block will make sure to add charCount and the current character to the string variable afterCompression
     try:
-        afterCompression = afterCompression + str(charCount) + givenStr[char]
+        encoded = encoded + str(charCount) + givenStr[char]
     # Except block will handle Border case inputs; If there is only one character in the given string
     except:
-        afterCompression = afterCompression + str(charCount) + givenStr
+        encoded = encoded + str(charCount) + givenStr
     # Return afterCompression to the calling function
-    return(afterCompression)
+    return(encoded)
 
 # Driver code
 if __name__ == "__main__":
