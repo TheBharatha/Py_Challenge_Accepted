@@ -31,7 +31,10 @@ def stringComprress(givenStr):
 if __name__ == "__main__":
     # Prompts for input. The input is converted to a string
     rawString = str(input('Enter the string: '))
-    # rawString is passed as an argument to the function stringComprress()
-    compressed = stringComprress(rawString)
+    if rawString != '':
+        # rawString is passed as an argument to the function stringComprress()
+        compressed = stringComprress(rawString)
+    else:
+        compressed = 'The string is empty!'
     # Prints the returned compressed string
     print(compressed)
