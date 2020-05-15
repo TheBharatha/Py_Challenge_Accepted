@@ -7,6 +7,7 @@ def roam(s):
             value = value + guide[char]
         else:
             value = value - guide[char]
+        print(value)
     print(value)
     
-roam('MCMXCIV')   
+roam('MMMDCCCLXXIV')   
