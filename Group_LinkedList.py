@@ -33,3 +33,13 @@ class Solution:
                 head = newNode
                 
         return head
+'''
+class Solution:
+    def oddEvenList(self, head: ListNode) -> ListNode:
+        if not head or not head.next: return head
+        lo, hi = head, head.next
+        while hi and hi.next: 
+            lo.next, hi.next.next, hi.next = hi.next, lo.next, hi.next.next
+            lo, hi = lo.next, hi.next
+        return head 
+'''
