@@ -1,5 +1,5 @@
 class Solution:
-    def findAnagrams(self, s: str, p: str) -> List[int]:
+    def findAnagrams(self, s, p):
         anagramPositions = list()
         pLen = len(p)
         p = ''.join(sorted(p))
@@ -13,3 +13,9 @@ class Solution:
             section += 1
             pLen += 1
         return(anagramPositions)
+
+if __name__ == "__main__":
+    p = 'abc'
+    s = 'cbaebabacd'
+    obj = Solution()
+    obj.findAnagrams(s,p)
