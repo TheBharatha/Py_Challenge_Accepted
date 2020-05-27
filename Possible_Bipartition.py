@@ -1,3 +1,4 @@
+from collections import defaultdict
 class Solution:
     def possibleBipartition(self, N, dislikes):
         good, hate, noHate = 0, 1, -1
@@ -14,7 +15,7 @@ class Solution:
         if N == 1 or not dislikes:
             return True
         
-        hatred = collections.defaultdict(list)
+        hatred = defaultdict(list)
         idealGroup = [good for _ in range(N+1)]
         
         for one, another in dislikes:
